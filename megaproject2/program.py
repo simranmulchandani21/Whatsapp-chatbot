@@ -12,7 +12,7 @@ def is_last_message_from_Sender_name(chat_log,sender_name="Ss"):
 # Small delay before script starts (so you can switch to the right window)
 pyautogui.moveTo(705, 1070, duration=0.5)
 
-    # Step 1: Move mouse to position (705, 1070)
+    
     
 while True:
     # Step 2: Drag from (687, 247) to (1845, 889)
@@ -23,10 +23,9 @@ while True:
     pyautogui.hotkey("ctrl", "c")
     pyautogui.click(722,270)
 
-    # Give clipboard time to update
     time.sleep(0.5)
 
-    # Step 4: Get text from clipboard into variable
+   
     chat_history = pyperclip.paste()
 
     
