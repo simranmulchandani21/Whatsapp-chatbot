@@ -9,17 +9,17 @@ def is_last_message_from_Sender_name(chat_log,sender_name="Ss"):
     if sender_name in messages:
         return True
     return False
-# Small delay before script starts (so you can switch to the right window)
+
 pyautogui.moveTo(705, 1070, duration=0.5)
 
     
     
 while True:
-    # Step 2: Drag from (687, 247) to (1845, 889)
+   
     pyautogui.moveTo(707, 248, duration=0.5)
     pyautogui.dragTo(786, 1005, duration=1, button='left')
 
-        # Step 3: Copy to clipboard (Ctrl + C)
+        
     pyautogui.hotkey("ctrl", "c")
     pyautogui.click(722,270)
 
@@ -30,7 +30,7 @@ while True:
 
     
     print("Copied Text:\n", chat_history)
-    #print(is_last_message_from_Sender_name(chat_history))
+    
 
     if is_last_message_from_Sender_name(chat_history):
 
