@@ -2,7 +2,7 @@ import pyautogui
 import pyperclip
 import time
 from openai import OpenAI
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="<your_api_key")
 time.sleep(3)
 def is_last_message_from_Sender_name(chat_log,sender_name="Ss"):
     messages=chat_log.strip().split("/2025] ")[-1]
